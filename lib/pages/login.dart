@@ -25,7 +25,7 @@ class _LoginState extends State<Login> {
     });
 
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => House_Rules(data!)));
+        context, MaterialPageRoute(builder: (context) => HouseRules(data!)));
   }
 
   @override

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class House_Rules extends StatefulWidget {
+class HouseRules extends StatefulWidget {
   final Map _data;
 
-  House_Rules(this._data);
+  HouseRules(this._data);
 
   @override
-  State<House_Rules> createState() => _House_RulesState();
+  State<HouseRules> createState() => _HouseRulesState();
 }
 
-class _House_RulesState extends State<House_Rules> {
+class _HouseRulesState extends State<HouseRules> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
