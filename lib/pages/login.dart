@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sasdev/pages/house_rules.dart';
 
 class Login extends StatefulWidget {
@@ -33,7 +32,7 @@ class _LoginState extends State<Login> {
     return Scaffold(
       // backgroundColor: Colors.grey,
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(top: 100, left: 20, right: 20),
+        padding: const EdgeInsets.only(top: 100, left: 20, right: 20),
         child: Align(
           alignment: Alignment.center,
           child: Column(
@@ -46,9 +45,9 @@ class _LoginState extends State<Login> {
                   width: MediaQuery.of(context).size.width,
                   child: Image.asset('assets/icons/searchandstay.png')),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
+                padding: const EdgeInsets.symmetric(vertical: 10),
                 child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "Username",
                     focusedBorder: OutlineInputBorder(
                         borderSide:
@@ -66,9 +65,9 @@ class _LoginState extends State<Login> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
+                padding: const EdgeInsets.symmetric(vertical: 10),
                 child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "Password",
                     focusedBorder: OutlineInputBorder(
                         borderSide:
@@ -86,14 +85,14 @@ class _LoginState extends State<Login> {
                   controller: passwordController,
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 25.0,
               ),
               ElevatedButton(
                 onPressed: () {
                   checkUser();
                 },
-                child: Text("Login"),
+                child: const Text("Login"),
               ),
             ],
           ),
